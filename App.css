@@ -1,0 +1,61 @@
+h1 {
+  font-size: 100px;
+  text-align: center;
+  color: rgb(0, 136, 120);
+}
+
+.input-grp {
+  width: 500px;
+  display: flex;
+  flex-direction: row;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+
+input {
+  width: 91.6%;
+  padding: 1.5rem 0rem;
+  box-shadow: rgb(0, 136, 120) 0px 1px 4px;
+  display: block;
+  border: none;
+  outline: none;
+}
+input::placeholder {
+  color: #000;
+  padding-left: 12px;
+  opacity: 0.5;
+  color: rgb(0, 136, 120);
+}
+button {
+  display: inline;
+  cursor: pointer;
+  padding: 1.6rem 1rem;
+  border: none;
+}
+
+ul {
+  color: aliceblue;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+li {
+  font-size: large;
+  margin: 0 2px;
+  background-color: #141010;
+  cursor: pointer;
+  margin-top: 2px;
+}
+ul li.completed {
+  text-decoration: line-through;
+}
+.item {
+  color: aliceblue;
+}
+.item.dash {
+  text-decoration: line-through;
+  opacity: 0.6;
+}
+.dashed {
+  text-decoration: line-through;
+  opacity: 0.6;
+}
