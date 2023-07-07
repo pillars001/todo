@@ -1,38 +1,61 @@
-.App {
+h1 {
+  font-size: 100px;
   text-align: center;
+  color: rgb(0, 136, 120);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.input-grp {
+  width: 500px;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex-direction: row;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
 }
 
-.App-link {
-  color: #61dafb;
+input {
+  width: 91.6%;
+  padding: 1.5rem 0rem;
+  box-shadow: rgb(0, 136, 120) 0px 1px 4px;
+  display: block;
+  border: none;
+  outline: none;
+}
+input::placeholder {
+  color: #000;
+  padding-left: 12px;
+  opacity: 0.5;
+  color: rgb(0, 136, 120);
+}
+button {
+  display: inline;
+  cursor: pointer;
+  padding: 1.6rem 1rem;
+  border: none;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+ul {
+  color: aliceblue;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+li {
+  font-size: large;
+  margin: 0 2px;
+  background-color: #141010;
+  cursor: pointer;
+  margin-top: 2px;
+}
+ul li.completed {
+  text-decoration: line-through;
+}
+.item {
+  color: aliceblue;
+}
+.item.dash {
+  text-decoration: line-through;
+  opacity: 0.6;
+}
+.dashed {
+  text-decoration: line-through;
+  opacity: 0.6;
 }
